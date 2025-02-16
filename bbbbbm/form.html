@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ฟอร์มลงทะเบียนศิษย์เก่า IT</title>
+
+</head>
+
+<body>
+
+<h1>ฟอร์มลงทะเบียนศิษย์เก่า IT</h1>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+<label for="firstName">ชื่อ:</label>
+<input type="text" id="firstName" name="firstName" required>
+<label for="lastName">สกุล:</label>
+<input type="text" id="lastName" name="lastName" required>
+<br>
+<label for="studentId">รหัสนักศึกษา:</label>
+<input type="text" id="studentId" name="studentId" required>
+<br>
+<label>เพศ:</label>
+<input type="radio" id="genderFemale" name="gender" value="female" required>
+<label for="genderFemale">หญิง</label>
+<input type="radio" id="genderMale" name="gender" value="male">
+<label for="genderMale">ชาย</label>
+<input type="radio" id="genderOther" name="gender" value="other">
+<label for="genderOther">อื่นๆ</label>
+<br>
+<label for="entryYear">ปีการศึกษาที่เข้าศึกษา:</label>
+<input type="number" id="entryYear" name="entryYear" min="1900" max="2099" required>
+<br>
+<label for="address">ที่อยู่:</label>
+<textarea id="address" name="address" rows="3" required></textarea>
+<br>
+<label for="email">อีเมล:</label>
+<input type="email" id="email" name="email" required>
+<br>
+<label for="phone">เบอร์โทรติดต่อ:</label>
+<input type="tel" id="phone" name="phone" required>
+<br>
+<label for="courseName">ชื่อหลักสูตร:</label>
+<select id="courseName" name="courseName" required>
+<option value="">กรุณาเลือก</option>
+<option value="it">IT</option>
+<option value="cs">IS</option>
+</select>
+<br>
+<label for="currentJob">อาชีพปัจจุบัน:</label>
+<input type="text" id="currentJob" name="currentJob" required>
+<br>
+<label for="workplace">สถานที่ทำงาน:</label>
+<input type="text" id="workplace" name="workplace" required>
+<br>
+<label for="jobType">ประเภทงานที่ทำ:</label>
+<select id="jobType" name="jobType" required>
+<option value="">กรุณาเลือก</option>
+<option value="developer">นักพัฒนาซอฟต์แวร์</option>
+<option value="analyst">นักวิเคราะห์ระบบ</option>
+<option value="manager">ผู้จัดการโครงการ</option>
+<option value="other">อื่นๆ</option>
+</select>
+<br>
+<label for="photo">อัปโหลดรูปถ่ายของคุณ:</label>
+<input type="file" id="photo" name="photo" accept="image/*">
+<br>
+<button type="submit">ส่งข้อมูล</button>
+
+</form>
+
+</body>
+
+</html>
